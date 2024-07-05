@@ -1,6 +1,6 @@
 #ifndef NOW_H
 #define NOW_H
 
-int Now();
+long Now();
 
 #endif

@@ -1,0 +1,61 @@
+application.o: application.cpp application.h coordinates.h game.h food.h \
+ g_obj.h frame.h pixel.h setting.h snake.h snake_block.h task.h logger.h \
+ controller.h my_snake.h random.h ui.h page.h food_controller.h sleep.h \
+ now.h snake_ai_controller.h keyboard.h snake_controller.h \
+ snake_eat_controller.h snake_user_controller.h
+ascii.o: ascii.cpp ascii.h
+cli.o: cli.cpp cli.h
+controller.o: controller.cpp controller.h game.h food.h coordinates.h \
+ g_obj.h frame.h pixel.h setting.h snake.h snake_block.h task.h logger.h
+coordinates.o: coordinates.cpp coordinates.h
+direction.o: direction.cpp direction.h coordinates.h
+food0.o: food0.cpp food0.h coordinates.h food.h g_obj.h frame.h pixel.h \
+ setting.h snake.h snake_block.h task.h logger.h
+food1.o: food1.cpp food1.h coordinates.h food.h g_obj.h frame.h pixel.h \
+ setting.h snake.h snake_block.h task.h logger.h
+food2.o: food2.cpp food2.h coordinates.h food.h g_obj.h frame.h pixel.h \
+ setting.h snake.h snake_block.h task.h logger.h
+food_controller.o: food_controller.cpp food_controller.h controller.h \
+ game.h food.h coordinates.h g_obj.h frame.h pixel.h setting.h snake.h \
+ snake_block.h task.h logger.h random.h food1.h
+food.o: food.cpp food.h coordinates.h g_obj.h frame.h pixel.h setting.h \
+ snake.h snake_block.h task.h logger.h
+frame.o: frame.cpp frame.h pixel.h coordinates.h
+game.o: game.cpp game.h food.h coordinates.h g_obj.h frame.h pixel.h \
+ setting.h snake.h snake_block.h task.h logger.h
+g_obj.o: g_obj.cpp g_obj.h frame.h pixel.h coordinates.h setting.h
+keyboard.o: keyboard.cpp keyboard.h
+logger.o: logger.cpp logger.h
+main.o: main.cpp application.h coordinates.h game.h food.h g_obj.h \
+ frame.h pixel.h setting.h snake.h snake_block.h task.h logger.h \
+ controller.h my_snake.h random.h ui.h page.h
+my_snake.o: my_snake.cpp my_snake.h coordinates.h snake.h frame.h pixel.h \
+ g_obj.h setting.h snake_block.h task.h logger.h
+now.o: now.cpp now.h
+page.o: page.cpp page.h frame.h pixel.h coordinates.h g_obj.h setting.h \
+ game.h food.h snake.h snake_block.h task.h logger.h now.h
+pixel.o: pixel.cpp pixel.h coordinates.h
+random.o: random.cpp random.h coordinates.h food.h g_obj.h frame.h \
+ pixel.h setting.h snake.h snake_block.h task.h logger.h food0.h food1.h \
+ food2.h
+setting.o: setting.cpp setting.h coordinates.h
+sleep.o: sleep.cpp sleep.h
+snake_ai_controller.o: snake_ai_controller.cpp snake_ai_controller.h \
+ keyboard.h snake.h coordinates.h frame.h pixel.h g_obj.h setting.h \
+ snake_block.h task.h logger.h snake_controller.h
+snake_block.o: snake_block.cpp snake_block.h coordinates.h
+snake_controller.o: snake_controller.cpp snake_controller.h snake.h \
+ coordinates.h frame.h pixel.h g_obj.h setting.h snake_block.h task.h \
+ logger.h
+snake.o: snake.cpp snake.h coordinates.h frame.h pixel.h g_obj.h \
+ setting.h snake_block.h task.h logger.h ascii.h direction.h now.h
+snake_eat_controller.o: snake_eat_controller.cpp snake_eat_controller.h \
+ controller.h game.h food.h coordinates.h g_obj.h frame.h pixel.h \
+ setting.h snake.h snake_block.h task.h logger.h
+snake_user_controller.o: snake_user_controller.cpp \
+ snake_user_controller.h keyboard.h snake_controller.h snake.h \
+ coordinates.h frame.h pixel.h g_obj.h setting.h snake_block.h task.h \
+ logger.h
+task.o: task.cpp task.h logger.h
+ui.o: ui.cpp ui.h page.h frame.h pixel.h coordinates.h g_obj.h setting.h \
+ game.h food.h snake.h snake_block.h task.h logger.h cli.h

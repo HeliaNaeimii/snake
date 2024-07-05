@@ -3,12 +3,13 @@
 #include "coordinates.h"
 
 class snake_body {
-private:
+	private:
 	Coordinates* coordinates;
-
-public:
+	public:
+	snake_body(Coordinates& coord);
+	snake_body(Coordinates* coord);
 	bool initialized;
-	Coordinates get_coordinates();
+	Coordinates& get_coordinates();
 	void set_coordinates(Coordinates& coordinates);
 };
 #endif
